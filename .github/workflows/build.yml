@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Run custom action
-        uses: ../action
+        uses: ../action.yml
 
       - name: Checkout code
         uses: actions/checkout@v2
