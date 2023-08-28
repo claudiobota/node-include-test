@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps:
+    steps: &common-steps
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -23,3 +23,5 @@ jobs:
 
       - name: Build Vue app
         run: npm run build
+
+      - <<: *common-steps
