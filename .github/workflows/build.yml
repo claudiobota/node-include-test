@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run custom action
-        uses: ../action.yml
-
       - name: Checkout code
         uses: actions/checkout@v2
+
+      - name: Run custom action
+        uses: ./.github/action.yml
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
