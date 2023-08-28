@@ -1,6 +1,0 @@
-# common-steps.yml
-steps:
-  - name: Step 1
-    run: echo "Running Step 1"
-  - name: Step 2
-    run: echo "Running Step 2"

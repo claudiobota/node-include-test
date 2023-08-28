@@ -9,7 +9,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps: &common-steps
+    steps:
+      - name: Run custom action
+        uses: ../action
+        
       - name: Checkout code
         uses: actions/checkout@v2
 
