@@ -18,14 +18,3 @@ jobs:
 
       - name: Run custom action
         uses: ./.github/actions/echo-stuff
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build Vue app
-        run: npm run build
